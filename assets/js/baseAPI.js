@@ -15,7 +15,7 @@ $.ajaxPrefilter(function(options){
 
     //全局统一挂载complete回调函数
     options.complete = function(res){
-        console.log('执行了回调函数')
+        // console.log('执行了回调函数')
         console.log(res)
         //responseJSON中有返回的数据 可以根据里面的数据判断有没有登陆
         if(res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！'){
