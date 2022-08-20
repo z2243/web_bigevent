@@ -46,6 +46,7 @@ $(function(){
         avatar:dataURL
       },
       success:function(res){
+        console.log(dataURL)
         if(res.status !== 0){
           return layui.layer.msg('更换头像失败！')
         }
